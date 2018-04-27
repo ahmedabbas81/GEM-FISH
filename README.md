@@ -17,16 +17,20 @@ Installation
 Example for usage:
 
 1- Calculate a TAD-level-resolution 3D model for the chromosome as follows:
-    i- Go into the folder GEM-FISH_TAD-level-resolution
-    ii- Run the m-file 'run_chr21_rao.m'. This will calculate the TAD-level-resolution 3D structure for an example chromosome (Chr21).
+a- Go into the folder GEM-FISH_TAD-level-resolution
+    
+b- Run the m-file 'run_chr21_rao.m'. This will calculate the TAD-level-resolution 3D structure for an example chromosome (Chr21).
 
 2- Calculate the intra-TAD conformations of individual TADs as follows:
-    i- Go into the folder GEM-FISH_TAD-conformations
-    ii- Run the m-file 'get_locals_chr21_Rao.m'. This will calculate the intra-TAD conformation of individual TADs of the example chromosome (Chr21).
+a- Go into the folder GEM-FISH_TAD-conformations
+    
+b- Run the m-file 'get_locals_chr21_Rao.m'. This will calculate the intra-TAD conformation of individual TADs of the example chromosome (Chr21).
 
 3- Calculate the final 3D model of the chromosome
-    i- Go back to the parent folder GEM-FISH
-    ii- Run the m-file 'final_model_chr21.m'. This will calculate the final 3D model of the chromosome investigated (Chr21 in our case)
-    iii- The final 3D structure is written in the file 'final_model.txt' in the GEM_FISH folder
+a- Go back to the parent folder GEM-FISH
+    
+b- Run the m-file 'final_model_chr21.m'. This will calculate the final 3D model of the chromosome investigated (Chr21 in our case)
+    
+c- The final 3D structure is written in the file 'final_model.txt' in the GEM_FISH folder
 
 For any questions or bug-reporting, please contact: ahmedabbas@mail.tsinghua.edu.cn
