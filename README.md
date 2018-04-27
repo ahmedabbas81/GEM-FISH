@@ -33,4 +33,6 @@ b- Run the m-file 'final_model_chr21.m'. This will calculate the final 3D model 
     
 c- The final 3D structure is written in the file 'final_model.txt' in the GEM_FISH folder
 
+====================================================================================================
+
 For any questions or bug-reporting, please contact: ahmedabbas@mail.tsinghua.edu.cn
