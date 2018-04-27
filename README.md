@@ -7,8 +7,11 @@ Ahmed Abbas, Xuan He, Bin Zhou, Guangxiang Zhu, Zishan Ma, Jun-Tao Gao, Michael 
 Installation
 
 1- Create a folder and let its name "GEM-FISH" 
+
 2- Put all the Matlab scripts in the folder GEM-FISH 
+
 3- Extract the two zip files "GEM-FISH_TAD-conformations.zip" and "GEM-FISH_TAD-level-resolution.zip" in the folder GEM-FISH 
+
 4- Add GEM-FISH to your Matlab path
 
 Example for usage:
