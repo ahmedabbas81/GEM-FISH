@@ -8,7 +8,11 @@ Installation
 ![screenshot1](https://user-images.githubusercontent.com/32098502/47285956-5bf65280-d61f-11e8-9bf2-1865fee6f405.png)
 
 1- Download the source code of GEM-FISH (i.e., the file GEM-FISH-master.zip) by clicking the button "Download ZIP" as in the image.
+
 2- Extract the file GEM-FISH-master.zip
+
+![screenshot2](https://user-images.githubusercontent.com/32098502/47286439-4da93600-d621-11e8-9d68-dc4116bbf5d6.png)
+
 
 2- Put all the Matlab scripts in the folder GEM-FISH 
 
