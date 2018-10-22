@@ -2,7 +2,7 @@ function [n errors] = calculate_errors(a,b)
 n1 = 0;
 e1 = [];
 for i = 1 : length(a)
-    if(sign(a(i))~=sign(b(i)))
+    if(sign(a(i))~=sign(b(i)) && abs(a(i))~=0 && abs(b(i))~=0)
         n1 = n1+1;
         e1 = [e1;i];
     end
@@ -10,7 +10,7 @@ end
 n2 = 0;
 e2 = [];
 for i = 1 : length(a)
-    if(sign(a(i))==sign(b(i)))
+    if(sign(a(i))==sign(b(i)) && abs(a(i))~=0 && abs(b(i))~=0)
         n2 = n2+1;
         e2 = [e2;i];
     end
