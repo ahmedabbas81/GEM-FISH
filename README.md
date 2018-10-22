@@ -5,8 +5,10 @@ Citation
 Ahmed Abbas, Xuan He, Bin Zhou, Guangxiang Zhu, Zishan Ma, Jun-Tao Gao, Michael Q Zhang, and Jianyang Zeng. "Integrating Hi-C and FISH data for modeling 3D organizations of chromosomes". Submitted (April-2018)
 
 Installation
+![screenshot1](https://user-images.githubusercontent.com/32098502/47285956-5bf65280-d61f-11e8-9bf2-1865fee6f405.png)
 
-1- Create a folder and let its name "GEM-FISH" 
+1- Download the source code of GEM-FISH (i.e., the file GEM-FISH-master.zip) by clicking the button "Download ZIP" as in the image.
+2- Extract the file GEM-FISH-master.zip
 
 2- Put all the Matlab scripts in the folder GEM-FISH 
 
