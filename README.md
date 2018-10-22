@@ -13,20 +13,27 @@ Installation
 
 ![screenshot2](https://user-images.githubusercontent.com/32098502/47286439-4da93600-d621-11e8-9d68-dc4116bbf5d6.png)
 
+3- The extracted folder GEM-FISH-master has two zip files and a group of '.m' files. The first zip file: GEM-FISH_TAD-level-resolution.zip, has the Matlab scripts to calculate the TAD-level resolution 3D model of a chromosome. The second zip file: GEM-FISH_TAD-conformations.zip has the Matlab scripts to calculate the intra-TAD 3D structure of each individual TAD in the chromosome. The '.m' files in the folder are for the integrating the intra-TAD 3D models to the TAD-level resolution 3D model to produce the final high-resolution 3D model of the chromosome.
 
-2- Put all the Matlab scripts in the folder GEM-FISH 
+4- Extract the two zip files "GEM-FISH_TAD-conformations.zip" and "GEM-FISH_TAD-level-resolution.zip" in the folder GEM-FISH-master. The GEM-FISH-master contents should be as in the picture, 
 
-3- Extract the two zip files "GEM-FISH_TAD-conformations.zip" and "GEM-FISH_TAD-level-resolution.zip" in the folder GEM-FISH 
-
-4- Add GEM-FISH to your Matlab path
+![screenshot3](https://user-images.githubusercontent.com/32098502/47287981-ad561000-d626-11e8-96ec-79ee8bb26e15.png)
 
 Example for usage:
 
-1- Calculate a TAD-level-resolution 3D model for the chromosome as follows:
+1- To calculate a TAD-level-resolution 3D model for the chromosome, follow these steps:
 
 a- Go into the folder GEM-FISH_TAD-level-resolution
-    
-b- Run the m-file 'run_chr21_rao.m'. This will calculate the TAD-level-resolution 3D structure for an example chromosome (Chr21).
+
+![screenshot4](https://user-images.githubusercontent.com/32098502/47288442-b9db6800-d628-11e8-82a0-ebd2a5beced0.png)
+
+b- Run the m-file 'run_chr21_rao.m' as in the picture below. 
+
+![screenshot5](https://user-images.githubusercontent.com/32098502/47288469-d8416380-d628-11e8-9142-5d5e0705946d.png)
+
+c- This will calculate the TAD-level-resolution 3D structure for an example chromosome (Chr21) in a file called "conformation1.txt", and will save it in a newly created folder "chr_21_TAD_level_resolution", as in the picture.
+
+![screenshot6](https://user-images.githubusercontent.com/32098502/47288484-e8f1d980-d628-11e8-8bab-9e9628a4d5bb.png)
 
 2- Calculate the intra-TAD conformations of individual TADs as follows:
 
