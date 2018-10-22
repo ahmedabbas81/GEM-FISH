@@ -45,7 +45,15 @@ b- Run the script: "validate_tad_level_model.m" to calculate the average relativ
 
 ![screenshot8](https://user-images.githubusercontent.com/32098502/47289028-6880a800-d62b-11e8-8f6c-d9a73bb4532e.png)
 
+As in the picture, two figures showing the TADs assignment to A/B compartments. The upper one is using the 3D model reconstructed by GEM-FISH (as in its title), and the lower one using the experimental FISH data. As in the figures, only two TADs are wrongly assigned. 
 
+In addition, on the matlab command window, the numeric results are appearing, 
+
+Number of correctly assigned TADs = 32/34
+
+Average relative error = 0.162
+
+Asphericity value = 0.024
 
 
 2- Calculate the intra-TAD conformations of individual TADs as follows:
