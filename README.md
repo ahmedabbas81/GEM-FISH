@@ -35,6 +35,19 @@ c- This will calculate the TAD-level-resolution 3D structure for an example chro
 
 ![screenshot6](https://user-images.githubusercontent.com/32098502/47288484-e8f1d980-d628-11e8-8bab-9e9628a4d5bb.png)
 
+2- To run some validation tests on the reconstructed 3D model of Chr21
+
+a- Return back to the parent folder "GEM-FISH-master", as in the picture,
+
+![screenshot7](https://user-images.githubusercontent.com/32098502/47289025-63235d80-d62b-11e8-8948-d59b4446b0ea.png)
+
+b- Run the script: "validate_tad_level_model.m" to calculate the average relative error, number of correctly assigned TADs to A/B compartments, and the asphericity value of the reconstructed 3D model, as in picture:
+
+![screenshot8](https://user-images.githubusercontent.com/32098502/47289028-6880a800-d62b-11e8-8f6c-d9a73bb4532e.png)
+
+
+
+
 2- Calculate the intra-TAD conformations of individual TADs as follows:
 
 a- Go into the folder GEM-FISH_TAD-conformations
