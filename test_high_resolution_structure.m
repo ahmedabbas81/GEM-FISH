@@ -65,11 +65,11 @@ for i = 1 : nTADs
         end
     end
 end
-f_name = sprintf('%s/normalized_distance_matrices.mat',out_dir_name);
-save(f_name,'norm_original','norm_hic_fish','norm_hic_fish_high_resolution');
-dir_name = out_dir_name;
-file_name = 'compartments_correlation';
-get_compartments(norm_original,norm_hic_fish_high_resolution,dir_name,file_name);
+% f_name = sprintf('%s/normalized_distance_matrices.mat',out_dir_name);
+% save(f_name,'norm_original','norm_hic_fish','norm_hic_fish_high_resolution');
+% dir_name = out_dir_name;
+% file_name = 'compartments_correlation';
+% get_compartments(norm_original,norm_hic_fish_high_resolution,dir_name,file_name);
 
 
     
