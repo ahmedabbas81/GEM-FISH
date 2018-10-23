@@ -1,10 +1,10 @@
 GEM-FISH is a program that calculates 3D chromosome models through integrating both Hi-C and FISH data with the prior biophysical knowledge about 3D polymers.
 
-Citation
+## Citation
 
 Ahmed Abbas, Xuan He, Bin Zhou, Guangxiang Zhu, Zishan Ma, Jun-Tao Gao, Michael Q Zhang, and Jianyang Zeng. "Integrating Hi-C and FISH data for modeling 3D organizations of chromosomes". Submitted (April-2018)
 
-Installation
+## Installation
 ![screenshot1](https://user-images.githubusercontent.com/32098502/47285956-5bf65280-d61f-11e8-9bf2-1865fee6f405.png)
 
 1- Download the source code of GEM-FISH (i.e., the file GEM-FISH-master.zip) by clicking the button "Download ZIP" as in the image.
@@ -19,9 +19,9 @@ Installation
 
 ![screenshot3](https://user-images.githubusercontent.com/32098502/47287981-ad561000-d626-11e8-96ec-79ee8bb26e15.png)
 
-Example for usage:
+# Example for usage:
 
-1- To calculate a TAD-level-resolution 3D model for the chromosome, follow these steps:
+## To calculate a TAD-level-resolution 3D model for the chromosome, follow these steps:
 
 a- Go into the folder GEM-FISH_TAD-level-resolution
 
@@ -35,7 +35,7 @@ c- This will calculate the TAD-level-resolution 3D structure for an example chro
 
 ![screenshot6](https://user-images.githubusercontent.com/32098502/47288484-e8f1d980-d628-11e8-8bab-9e9628a4d5bb.png)
 
-2- To run some validation tests on the reconstructed 3D model of Chr21
+## To run some validation tests on the reconstructed 3D model of Chr21
 
 a- Return back to the parent folder "GEM-FISH-master", as in the picture,
 
@@ -56,7 +56,7 @@ Average relative error = 0.162
 Asphericity value = 0.024
 
 
-3- Calculate the intra-TAD conformations of individual TADs as follows:
+## Calculate the intra-TAD conformations of individual TADs as follows:
 
 a- Go into the folder GEM-FISH_TAD-conformations
 
@@ -73,7 +73,7 @@ c- Instead, to calculate them in parallel, run the m-file 'get_locals_chr21_Rao_
 ![tads3](https://user-images.githubusercontent.com/32098502/47346352-8d365780-d6df-11e8-8db2-6066696b116d.png)
 
 
-4- Calculate the final 3D model of the chromosome
+## Calculate the final 3D model of the chromosome
 
 a- Go back to the parent folder GEM-FISH
     
