@@ -56,18 +56,33 @@ Average relative error = 0.162
 Asphericity value = 0.024
 
 
-2- Calculate the intra-TAD conformations of individual TADs as follows:
+3- Calculate the intra-TAD conformations of individual TADs as follows:
 
 a- Go into the folder GEM-FISH_TAD-conformations
+
+![tads1](https://user-images.githubusercontent.com/32098502/47345369-244de000-d6dd-11e8-8728-02eae68ae92c.png)
     
 b- Run the m-file 'get_locals_chr21_Rao.m'. This will calculate the intra-TAD conformation of individual TADs of the example chromosome (Chr21).
 
-3- Calculate the final 3D model of the chromosome
+![tads2](https://user-images.githubusercontent.com/32098502/47345996-b73b4a00-d6de-11e8-9a28-4ed1be3eff63.png)
+
+This will calculate the 3D models of the 34 TADs of chr21 sequentially.
+
+c- Instead, to calculate them in parallel, run the m-file 'get_locals_chr21_Rao_parallel.m'
+
+![tads3](https://user-images.githubusercontent.com/32098502/47346352-8d365780-d6df-11e8-8db2-6066696b116d.png)
+
+
+4- Calculate the final 3D model of the chromosome
 
 a- Go back to the parent folder GEM-FISH
     
+ ![final1](https://user-images.githubusercontent.com/32098502/47346730-57de3980-d6e0-11e8-8f47-f4a118a68876.png)
+   
 b- Run the m-file 'final_model_chr21.m'. This will calculate the final 3D model of the chromosome investigated (Chr21 in our case)
-    
+
+ ![final2](https://user-images.githubusercontent.com/32098502/47346737-5c0a5700-d6e0-11e8-83e9-4a7c6e859ad4.png)  
+ 
 c- The final 3D structure is written in the file 'final_model.txt' in the GEM_FISH folder
 
 =================================================================================
