@@ -85,6 +85,39 @@ b- Run the m-file 'final_model_chr21.m'. This will calculate the final 3D model 
  
 c- The final 3D structure is written in the file 'final_model.txt' in the GEM_FISH folder
 
+## Running some validation tests on the final 3D models
+
+We added a folder containing the final 3D models reconstructed by GEM-FISH for the Chrs 20, 21, and 22. 
+
+a- Extract the folder "validation_tests_final_models.zip"
+
+![v1](https://user-images.githubusercontent.com/32098502/47443623-59def000-d7e7-11e8-8c18-c440af489b73.png)
+
+b- Go to the extracted folder in Matlab as shown in picture
+
+![v2](https://user-images.githubusercontent.com/32098502/47443898-e4bfea80-d7e7-11e8-971d-f736a5ed2337.png)
+
+c- To test the spatial distributions of super-enhancers and regular enhancers, go to the folder "validation_super_enhancers" as shown
+
+![v3](https://user-images.githubusercontent.com/32098502/47444048-30729400-d7e8-11e8-86c0-985794c37c2e.png)
+
+d- Run the m-file "call_validate_SE.m", which will draw a boxplot showing the normalized radial distances of super-enhancers and regular enhancers in the three autosomes 20, 21, and 22. It will also calculate the p-value using Wilcoxon rank sum test as in picture
+
+![v4](https://user-images.githubusercontent.com/32098502/47444284-bbec2500-d7e8-11e8-9b6a-d08fb0fe8a4c.png)
+
+d- To test the spatial distributions of the genomic sites interacting with the nuclear pore complex component Nup153 in the three autosomes, go to folder "validate_Nup153_radial_distribution" as shown in picture
+
+![v5](https://user-images.githubusercontent.com/32098502/47444465-19807180-d7e9-11e8-8b81-14a5fe21df42.png)
+
+e- Run the m-file "call_validate_Nup153.m", which will compare the spatial distributions of genomic sites interacting with Nup153 to random loci of same genomic lengths (denoted by Control-Nup), as shown in picture
+
+![v6](https://user-images.githubusercontent.com/32098502/47444728-b7743c00-d7e9-11e8-86c9-7b4ecc850096.png)
+
+Note that the result will change if we run the same script again, because in each time it will select a new set of random loci, as shown in the picture
+
+![v7](https://user-images.githubusercontent.com/32098502/47444852-03bf7c00-d7ea-11e8-8cb4-e026d6964a4c.png)
+
+
 =================================================================================
 
 For any questions or bug-reporting, please contact: ahmedabbas@mail.tsinghua.edu.cn
