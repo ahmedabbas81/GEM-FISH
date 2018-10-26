@@ -98,19 +98,23 @@ b- Go to the extracted folder in Matlab as shown in picture
 
 ![v2](https://user-images.githubusercontent.com/32098502/47443898-e4bfea80-d7e7-11e8-971d-f736a5ed2337.png)
 
-c- To test the spatial distributions of super-enhancers and regular enhancers, go to the folder "validation_super_enhancers" as shown
+### Test the spatial distributions of super-enhancers and regular enhancers
+
+a- To test the spatial distributions of super-enhancers and regular enhancers, go to the folder "validation_super_enhancers" as shown
 
 ![v3](https://user-images.githubusercontent.com/32098502/47444048-30729400-d7e8-11e8-86c0-985794c37c2e.png)
 
-d- Run the m-file "call_validate_SE.m", which will draw a boxplot showing the normalized radial distances of super-enhancers and regular enhancers in the three autosomes 20, 21, and 22. It will also calculate the p-value using Wilcoxon rank sum test as in picture
+b- Run the m-file "call_validate_SE.m", which will draw a boxplot showing the normalized radial distances of super-enhancers and regular enhancers in the three autosomes 20, 21, and 22. It will also calculate the p-value using Wilcoxon rank sum test as in picture
 
 ![v4](https://user-images.githubusercontent.com/32098502/47444284-bbec2500-d7e8-11e8-9b6a-d08fb0fe8a4c.png)
 
-d- To test the spatial distributions of the genomic sites interacting with the nuclear pore complex component Nup153 in the three autosomes, go to folder "validate_Nup153_radial_distribution" as shown in picture
+### Test the spatial distributions of the genomic sites interacting with the nuclear pore complex component Nup153
+
+a- To test the spatial distributions of the genomic sites interacting with the nuclear pore complex component Nup153 in the three autosomes, go to folder "validate_Nup153_radial_distribution" as shown in picture
 
 ![v5](https://user-images.githubusercontent.com/32098502/47444465-19807180-d7e9-11e8-8b81-14a5fe21df42.png)
 
-e- Run the m-file "call_validate_Nup153.m", which will compare the spatial distributions of genomic sites interacting with Nup153 to random loci of same genomic lengths (denoted by Control-Nup), as shown in picture
+b- Run the m-file "call_validate_Nup153.m", which will compare the spatial distributions of genomic sites interacting with Nup153 to random loci of same genomic lengths (denoted by Control-Nup), as shown in picture
 
 ![v6](https://user-images.githubusercontent.com/32098502/47444728-b7743c00-d7e9-11e8-86c9-7b4ecc850096.png)
 
@@ -118,6 +122,21 @@ Note that the result will change if we run the same script again, because in eac
 
 ![v7](https://user-images.githubusercontent.com/32098502/47444852-03bf7c00-d7ea-11e8-8cb4-e026d6964a4c.png)
 
+### Test the packing densities between loop and control anchor loci
+
+a- Go to the folder "validating_loop_loci" as shown in the picture
+
+![loop_loci](https://user-images.githubusercontent.com/32098502/47555518-98d38980-d93e-11e8-9834-d52d8065748d.png)
+
+b- To draw the boxplots of the packing densities between loop and control anchor loci for Chr20, type: validating_loops('20',5000) as shown in the picture, where 5000 is the resolution of the intra-TAD 3D models (i.e., each point in the intra-TAD 3D models represents 5 Kbp)
+
+![loops_20](https://user-images.githubusercontent.com/32098502/47555884-9160b000-d93f-11e8-9965-15d6497b004d.png)
+
+The p-value is calculated using one-tailed Wilcoxon rank sum test
+
+c- To draw the boxplots of the packing densities between loop and control anchor loci for Chr20, type: validating_loops('21',5000) as shown in the picture
+
+![loops_21](https://user-images.githubusercontent.com/32098502/47556079-0f24bb80-d940-11e8-8062-28b9e1041fde.png)
 
 =================================================================================
 
