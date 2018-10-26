@@ -5,9 +5,10 @@ GEM-FISH is a program that calculates 3D chromosome models through integrating b
 Ahmed Abbas, Xuan He, Bin Zhou, Guangxiang Zhu, Zishan Ma, Jun-Tao Gao, Michael Q Zhang, and Jianyang Zeng. "Integrating Hi-C and FISH data for modeling 3D organizations of chromosomes". Submitted (April-2018)
 
 ## Installation
-![screenshot1](https://user-images.githubusercontent.com/32098502/47285956-5bf65280-d61f-11e8-9bf2-1865fee6f405.png)
 
 1- Download the source code of GEM-FISH (i.e., the file GEM-FISH-master.zip) by clicking the button "Download ZIP" as in the image.
+
+![image1](https://user-images.githubusercontent.com/32098502/47552263-da603680-d936-11e8-8186-6600aaaf897f.png)
 
 2- Extract the file GEM-FISH-master.zip
 
