@@ -130,13 +130,13 @@ a- Go to the folder "validating_loop_loci" as shown in the picture
 
 b- To draw the boxplots of the packing densities between loop and control anchor loci for Chr20, type: validating_loops('20',5000) as shown in the picture, where 5000 is the resolution of the intra-TAD 3D models (i.e., each point in the intra-TAD 3D models represents 5 Kbp)
 
-![loops_20](https://user-images.githubusercontent.com/32098502/47555884-9160b000-d93f-11e8-9965-15d6497b004d.png)
+![l1](https://user-images.githubusercontent.com/32098502/47562546-64b59400-d951-11e8-99b7-aae5fc4531c3.png)
 
 The p-value is calculated using one-tailed Wilcoxon rank sum test
 
 c- To draw the boxplots of the packing densities between loop and control anchor loci for Chr20, type: validating_loops('21',5000) as shown in the picture
 
-![loops_21](https://user-images.githubusercontent.com/32098502/47556079-0f24bb80-d940-11e8-8062-28b9e1041fde.png)
+![l2](https://user-images.githubusercontent.com/32098502/47562548-67b08480-d951-11e8-88b8-1506730a25e0.png)
 
 =================================================================================
 
