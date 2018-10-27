@@ -1,4 +1,4 @@
-GEM-FISH is a program that calculates 3D chromosome models through integrating both Hi-C and FISH data with the prior biophysical knowledge about 3D polymers.
+GEM-FISH is a program that calculates 3D chromosome models through integrating both Hi-C and FISH data with the prior biophysical knowledge about 3D polymers. GEM-FISH was tested on Matlab R2014b and Matlab R2015b
 
 ## Citation
 
@@ -137,6 +137,27 @@ The p-value is calculated using one-tailed Wilcoxon rank sum test
 c- To draw the boxplots of the packing densities between loop and control anchor loci for Chr20, type: validating_loops('21',5000) as shown in the picture
 
 ![l2](https://user-images.githubusercontent.com/32098502/47562548-67b08480-d951-11e8-88b8-1506730a25e0.png)
+
+### Visualizing the reconstructed 3D models by GEM-FISH
+
+To visualize the 3D models reconstructed by GEM-FISH, we used UCSF CHIMERA (UCSF Chimera--a visualization system for exploratory research and analysis. Pettersen EF, Goddard TD, Huang CC, Couch GS, Greenblatt DM, Meng EC, Ferrin TE. J Comput Chem. 2004 Oct;25(13):1605-12)
+
+a- Go to the folder "visualize_structures" as shown in the picture
+
+![v1](https://user-images.githubusercontent.com/32098502/47606410-e555bc80-da45-11e8-91ef-ec7c681beb5c.png)
+
+b- To create ".cmm" files for the three example autosomes, run the script call_write_cmm_files.m as shown
+
+![v22](https://user-images.githubusercontent.com/32098502/47606478-a2e0af80-da46-11e8-89b9-4354c402b67e.png)
+
+This will create the files: chr20_final_model.cmm, chr21_final_model.cmm, and chr22_final_model.cmm
+
+c- The ".cmm" files can be opened using UCSF Chimera as shown
+
+![screenshot from 2018-10-28 00-20-32](https://user-images.githubusercontent.com/32098502/47606547-5b0e5800-da47-11e8-8874-48d2a6c671d6.png)
+
+
+
 
 =================================================================================
 
