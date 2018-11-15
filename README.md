@@ -190,6 +190,10 @@ h- The output files are created inside the folder "chr20_output_files" as shown,
 
 ![hic6](https://user-images.githubusercontent.com/32098502/48578578-fe6ed080-e954-11e8-8bbd-c799b754c316.png)
 
+The TAD-level resolution Hi-C map and loci locations are: "hic_tads_level_5kb.txt" and "hic_loci_level_5kb.txt", respectively.
+
+The intra-TAD Hi-C maps and loci files for the 30 TADs of Chr20 are: "hic_matrix_tad_i_Rao_5kb.txt" and "loci_tad_i_Rao_5kb.txt", respectively, where i = 0-29.
+
 
 
 
