@@ -156,6 +156,42 @@ c- The ".cmm" files can be opened using UCSF Chimera as shown
 
 ![screenshot from 2018-10-28 00-20-32](https://user-images.githubusercontent.com/32098502/47606547-5b0e5800-da47-11e8-8874-48d2a6c671d6.png)
 
+## Collecting Hi-C data
+
+### Getting the TAD-level resolution and the intra-TAD Hi-C maps
+
+To get the Hi-C maps for the whole chromosome at the TAD-level resolution and the Hi-C maps for individual TADs within the chromosome, 
+
+a- Extract the file "collect_hic_data.zip" as shown in the picture
+
+![hic1](https://user-images.githubusercontent.com/32098502/48578117-c6b35900-e953-11e8-81a8-0b0fac59f56b.png)
+
+b- The extracted folder contains Hi-C data at the 5 Kbp, 25 Kbp, 50 Kbp, and 100 Kbp obtained from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525
+
+c- The extracted folder also contains "config.txt" file to specify which chromosome to derive Hi-C maps for and at which resolution. The config file included will derive intra-TAD Hi-C maps at 5 Kbp resolution.
+
+d- Create a folder and name it "chr20_output_files" (the name mentioned in line 4 in the config file). This folder will get all the derived output Hi-C maps.
+
+![hic3](https://user-images.githubusercontent.com/32098502/48578128-ce72fd80-e953-11e8-8864-8b4c548e0470.png)
+
+e- To get the Hi-C maps for Chr20 for instance, open a terminal and go to the extracted folder as in the picture,
+
+![hic2](https://user-images.githubusercontent.com/32098502/48578125-cb780d00-e953-11e8-80e5-36549fa0d4ee.png)
+
+f- Compile the "readHiCdata_Rao_general.cpp" file as shown
+
+![hic4](https://user-images.githubusercontent.com/32098502/48578132-d16dee00-e953-11e8-91bc-3f8f32c62149.png)
+
+g- Run the program as shown
+
+![hic5](https://user-images.githubusercontent.com/32098502/48578135-d468de80-e953-11e8-8584-93476101b78a.png)  
+  
+h- The output files are created inside the folder "chr20_output_files" as shown,
+
+![hic6](https://user-images.githubusercontent.com/32098502/48578578-fe6ed080-e954-11e8-8bbd-c799b754c316.png)
+
+
+
 
 
 
