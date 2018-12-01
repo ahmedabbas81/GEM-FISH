@@ -38,4 +38,49 @@ for chr = 21:21
        fprintf('Number of correcly assigned TADs = %d/%d\n',(size(tads,1)-n_gem_fish),size(tads,1));
        fprintf('Average relative error = %.3f\n',avg_re);
        fprintf('Asphericity value = %.3f\n',Asp);
+       
+       %%compare inter- vs. intra- compartment pairwise TAD distances
+       A_indices = [];
+       B_indices = [];
+       for i = 1 : length(C_gem_fish)
+           if(C_gem_fish(i)>=0)
+               A_indices = [A_indices;i];
+           else
+               B_indices = [B_indices;i];
+           end
+       end
+       inter_dist =[];
+       intra_dist =[];
+       for i = 1 : size(gem_fish_D,1)
+           for j = 1 : size(gem_fish_D,2)
+               if(i==j)
+                   continue;
+               end
+               if((ismember(i,A_indices) && ismember(j,A_indices)) || (ismember(i,B_indices) && ismember(j,B_indices)))
+                   intra_dist = [intra_dist;gem_fish_D(i,j)];
+               else
+                   inter_dist = [inter_dist;gem_fish_D(i,j)];
+               end
+           end
+       end
+       C1 = [intra_dist;inter_dist];
+       G1 = zeros(size(intra_dist,1),1);
+       G2 = ones(size(inter_dist,1),1);
+       G = [G1;G2];
+       pause(3)
+       figure,
+       boxplot(C1/1000,G);
+       ylabel('Distances (\mum)');
+       color = ['m','c'];
+        h = findobj(gca,'Tag','Box');
+        for j=1:length(h)
+           patch(get(h(j),'XData'),get(h(j),'YData'),color(j),'FaceAlpha',.5);
+        end
+        set(gca,'xticklabel',{'Intra-comp.','Inter-comp.'},'FontSize',16)
+        p_val = ranksum(intra_dist,inter_dist,'tail','left');
+        fprintf('Comparison between intra- vs. inter-compartment pairwise TAD distances: Left-tailed p-value = %.4e\n',p_val);
+       
+               
 end
+
+
