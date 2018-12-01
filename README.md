@@ -44,9 +44,11 @@ a- Return back to the parent folder "GEM-FISH-master", as in the picture,
 
 b- Run the script: "validate_tad_level_model.m" to calculate the average relative error, number of correctly assigned TADs to A/B compartments, and the asphericity value of the reconstructed 3D model, as in picture:
 
-![screenshot8](https://user-images.githubusercontent.com/32098502/47289028-6880a800-d62b-11e8-8f6c-d9a73bb4532e.png)
+![p1](https://user-images.githubusercontent.com/32098502/49331680-0167f300-f5dc-11e8-86ca-9c692c76f5db.png)
 
 As in the picture, two figures showing the TADs assignment to A/B compartments. The upper one is using the 3D model reconstructed by GEM-FISH (as in its title), and the lower one using the experimental FISH data. As in the figures, only two TADs are wrongly assigned. 
+
+The third figure shows the intra- vs. inter-compartment TAD pairwise distances.
 
 In addition, on the matlab command window, the numeric results are appearing, 
 
@@ -56,6 +58,7 @@ Average relative error = 0.162
 
 Asphericity value = 0.024
 
+Comparison between intra- vs. inter-compartment pairwise TAD distances: Left-tailed p-value = 3.5212e-48
 
 ## Calculate the intra-TAD conformations of individual TADs as follows:
 
