@@ -239,6 +239,53 @@ h- The output files: Hi-C maps and loci locations files for the chromosome at th
 
 ![sc8](https://user-images.githubusercontent.com/32098502/50582554-5e3a2000-0e9e-11e9-8bc2-9051182ec241.png)
 
+i- To calculate the TAD-level resolution 3D model for Chr20, open Matlab and go to the folder: "create_TAD_level_model", as shown:
+
+![sc9](https://user-images.githubusercontent.com/32098502/50582611-c1c44d80-0e9e-11e9-9147-a0e6b00c7998.png)
+
+j- The main file that will need to be changed in case the user wants to calculate the models for other chromosomes is called: "create_TAD_level_model.m", as shown
+
+![sc10](https://user-images.githubusercontent.com/32098502/50582660-15cf3200-0e9f-11e9-945c-e0ce41cba008.png)
+
+k- To calculate the model for Chr20, run the m-file "create_TAD_level_model.m", as shown
+
+![sc11](https://user-images.githubusercontent.com/32098502/50582685-3e572c00-0e9f-11e9-8a60-ba5d1bfc32cd.png)
+
+l- The output 3D model will be in the folder: chr_20_TAD_level_resolution
+
+![sc13](https://user-images.githubusercontent.com/32098502/50582848-7ca11b00-0ea0-11e9-8c8b-a94f821697c5.png)
+
+m- To create the 3D models of individual TADs, go to the folder: "create_individual_TAD_models" and open the file: "get_locals_chr20_Rao_parallel.m", as shown. If 3D models for TADs of another chromosome to be calculated, please change the entries in this file
+
+![sc12](https://user-images.githubusercontent.com/32098502/50582750-b291cf80-0e9f-11e9-9835-8dc22bb87fab.png)
+
+n- Run the m-file: get_locals_chr20_Rao_parallel.m, as shown:
+
+![sc14](https://user-images.githubusercontent.com/32098502/50582786-ecfb6c80-0e9f-11e9-82ad-70c33dd53172.png)
+
+o- After several hours, all the 3D models of all TADs will be calculated and put in the folder: chr20_local_structures_Rao_5kb, as shown
+
+![sc15](https://user-images.githubusercontent.com/32098502/50582850-7e6ade80-0ea0-11e9-8796-9ac13a7d64aa.png)
+
+![sc16](https://user-images.githubusercontent.com/32098502/50582869-9c384380-0ea0-11e9-9b68-4961b049b16e.png)
+
+p- To build the final model, go to the folder: "build_final_model"
+
+![sc17](https://user-images.githubusercontent.com/32098502/50582884-bffb8980-0ea0-11e9-9090-33ff265b6fb2.png)
+
+q- The main file to be changed if to calculate models for other chromosomes are: build_final_model_chr20.m
+
+r- Run the file: build_final_model_chr20.m, as shown
+
+![sc19](https://user-images.githubusercontent.com/32098502/50582962-4d3ede00-0ea1-11e9-9f35-0c8f6ef59944.png)
+
+![sc20](https://user-images.githubusercontent.com/32098502/50582963-4e700b00-0ea1-11e9-8e07-e6bffea5848f.png)
+
+s- The final high-resolution 3D model is in folder chr20_final_model, as shown
+
+![sc21](https://user-images.githubusercontent.com/32098502/50582977-78c1c880-0ea1-11e9-9fe9-a893128ef068.png)
+
+
 =================================================================================
 
-For any questions or bug-reporting, please contact: ahmedabbas@mail.tsinghua.edu.cn
+### For any questions, bug-reporting, or suggestions, please contact: ahmedabbas@mail.tsinghua.edu.cn
