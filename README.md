@@ -197,10 +197,47 @@ The TAD-level resolution Hi-C map and loci locations are: "hic_tads_level_5kb.tx
 
 The intra-TAD Hi-C maps and loci files for the 30 TADs of Chr20 are: "hic_matrix_tad_i_Rao_5kb.txt" and "loci_tad_i_Rao_5kb.txt", respectively, where i = 0-29.
 
+## Example to calculate 3D models from raw Hi-C and FISH data
 
+a- Extract the zip file called "complete_example"
 
+![sc1](https://user-images.githubusercontent.com/32098502/50582254-f5ea3f00-0e9b-11e9-9dc8-621044d11c56.png)
 
+b- The folder "complete_example" has four sub-folders:
 
+1- collect_hic_data
+
+2- create_TAD_level_model
+
+3- create_individual_TAD_models
+
+4- build_final_model
+
+![sc2](https://user-images.githubusercontent.com/32098502/50582262-0d292c80-0e9c-11e9-9cc3-95dd075de013.png)
+
+c- To build the TAD-level resolution Hi-C map and the intra-TAD Hi-C maps for Chr20, go to the folder "collect_hic_data" as shown,
+
+![sc3](https://user-images.githubusercontent.com/32098502/50582385-35655b00-0e9d-11e9-8dc9-c52ed5a15693.png)
+
+d- Open a Terminal and compile the ".cpp" file that reads the raw Hi-C data, as shown
+
+![sc4](https://user-images.githubusercontent.com/32098502/50582425-7198bb80-0e9d-11e9-9f92-0aa5491cde1f.png)
+
+e- The "config.txt" file is adjusted as an example to build the Hi-C maps of Chr20, with the intra-TAD Hi-C maps having resolution 5 Kbp, as shown
+
+![sc5](https://user-images.githubusercontent.com/32098502/50582465-b91f4780-0e9d-11e9-9125-3dc2a17e56ce.png)
+
+f- Create a new folder and name it "chr20_output_files", as in line 4 in the config file, as shown
+
+![sc6](https://user-images.githubusercontent.com/32098502/50582488-e8ce4f80-0e9d-11e9-9318-b94474d08dab.png)
+
+g- Run the program in the terminal by typing: ./a.out, as shown
+
+![sc7](https://user-images.githubusercontent.com/32098502/50582508-0a2f3b80-0e9e-11e9-94b0-6730e00b94fd.png)
+
+h- The output files: Hi-C maps and loci locations files for the chromosome at the TAD-level resolution and also for individual TADs are now created in the folder: "chr20_output_files", as shown
+
+![sc8](https://user-images.githubusercontent.com/32098502/50582554-5e3a2000-0e9e-11e9-8bc2-9051182ec241.png)
 
 =================================================================================
 
